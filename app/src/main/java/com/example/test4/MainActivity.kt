@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import androidx.recyclerview.widget.RecyclerView
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 //реализация ретрофита
         val retrofit = Retrofit.Builder()
+               // .baseUrl("http://www.mocky.io/v2/")
                 .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
@@ -52,4 +54,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = UsersAdapter(users)
         //данные передаются в адаптер, для формирования данных
     }
+
+
+
 }

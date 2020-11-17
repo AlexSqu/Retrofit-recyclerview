@@ -7,6 +7,11 @@ data class User(
     var email: String? = null,
     var phone: String? = null,
     var website: String? = null
+
+  /*  var name: String? = null,
+    var price: String? = null,
+    var boxing: String? = null,
+    var nearestDeliveryDate: String? = null */
 )
 
 //класс данных пользователей

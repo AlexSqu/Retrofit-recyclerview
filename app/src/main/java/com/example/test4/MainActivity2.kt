@@ -36,7 +36,7 @@ class MainActivity2 : AppCompatActivity() {
         api.fetchAllUsers().enqueue(object : Callback<List<User>> {
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
 
-                api.fetchAllPosts().enqueue(object : Callback<List<posts_data>> {
+              /*  api.fetchAllPosts().enqueue(object : Callback<List<posts_data>> {
                     override fun onResponse(call: Call<List<posts_data>>, response: Response<List<posts_data>>) {
 
                     }
@@ -45,7 +45,7 @@ class MainActivity2 : AppCompatActivity() {
 
 
                     }
-                })
+                })*/
             }
 
             override fun onFailure(call: Call<List<User>>, t: Throwable) {
